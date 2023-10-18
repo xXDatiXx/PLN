@@ -1,0 +1,33 @@
+{"intents": [
+        {"tag": "Jugar_Juego",
+         "patterns": ["Quiero jugar un juego",
+		"¿Qué tal si jugamos un juego?",
+		"Juguemos un juego", 
+		"¿Qué juegos conoces", 
+		"Podemos jugar un juego",
+		"Juguemos algo",
+		"Quiero que juguemos",
+		"Vamos a jugar un juego"]
+        },
+		{"tag": "Reproducir_Musica",
+         "patterns": ["Quiero escuchar música", 
+		 "¿Puedes reproducir música?", 
+		 "Quiero que reproduzcas música", 
+		 "Quiero que pongas una canción", 
+		 "Activa el reproductor de música",
+		 "Me agradaría escuchar algo de música",
+		 "Puedes poner música en algún servicio de streamming",
+		 "Abre el reproductor musical por favor"]
+		 },
+		{"tag": "Mortal_Kombat",
+		 "patterns": ["Quiero saber más de Mortal Kombat",
+		"¿Puedes decirme cual es el mejor personaje?",
+		"Quiero que pongas e juego de Mortal Kombat",
+		"Pudes decirme los combos para jugar Sub-Zero",
+		"¿Qué tiene de diferente Mortal Kombat 11 con Mortal Kombat 1?",
+		"Me agradaría jugar Mortal Kombat",
+		"Puedes iniciar el juego de Mortal Kombat",
+		"Enciende el Xbox por favor"]
+		}
+   ]
+}
