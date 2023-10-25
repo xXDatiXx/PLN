@@ -1,0 +1,208 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cumpleaños",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CapturarFechaIntent",
+                    "slots": [
+                        {
+                            "name": "mes",
+                            "type": "mes"
+                        },
+                        {
+                            "name": "anio",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER"
+                        },
+                        {
+                            "name": "dia",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{mes} del {anio}",
+                        "{dia} de {mes}",
+                        "el año {anio}",
+                        "en {anio}",
+                        "nací en {anio}",
+                        "el {dia} de {mes}",
+                        "el día {dia} de {mes}",
+                        "mi fecha de nacimiento es el {dia} de {mes} de {anio}",
+                        "nací el {dia} de {mes} de {anio}",
+                        "mi cumpleaños es el {dia} de {mes} de {anio}",
+                        "registra mi cumpleaños",
+                        "apunta mi cumpleaños",
+                        "apunta mi fecha de nacimiento",
+                        "registra mi fecha de nacimiento",
+                        "recuerda mi cumpleaños",
+                        "acuérdate de mi cumpleaños",
+                        "apúntate mi cumple"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "mes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "diciembre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "noviembre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "octubre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "septiembre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "agosto"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "julio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "junio"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mayo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "abril"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "marzo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "febrero"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "enero"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "CapturarFechaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "mes",
+                            "type": "mes",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1403559893043.1206723822839"
+                            }
+                        },
+                        {
+                            "name": "anio",
+                            "type": "AMAZON.FOUR_DIGIT_NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1403559893043.17346585967"
+                            }
+                        },
+                        {
+                            "name": "dia",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1403559893043.210361861771"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.1403559893043.1206723822839",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿En qué mes naciste?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es tu mes de nacimiento?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1403559893043.17346585967",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿En qué año naciste?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es tu año de nacimiento?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1403559893043.210361861771",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿En qué día naciste?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "¿Cuál es tu día de nacimiento?"
+                    }
+                ]
+            }
+        ]
+    }
+}
